@@ -22,6 +22,72 @@ html.reveal-full-page {
 	overflow: hidden;
 }
 
+.reveal h1, .reveal h2, .reveal h3 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    font-weight: bold;
+    text-align: center;
+    color: #333; /* Dark grey for better readability */
+    text-shadow: none; /* Remove glow effect */
+    margin-bottom: 10px;
+}
+
+.reveal p {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+}
+.reveal p strong {
+     color: #004d40; /* Deep Green */
+ }
+
+ .reveal p em {
+     color: #FF5733; /* Orange */
+     font-style: normal;
+ }
+
+ .reveal p:last-child {
+     font-size: 24px;
+     font-weight: bold;
+     color: #005580;
+ }
+
+ .reveal p span.math {
+     font-size: 1.6em;
+     font-weight: bold;
+     color: #007acc;
+     text-align: center;
+ }
+
+.reveal img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px; /* Soft rounded corners */
+    width: 150px; /* Adjust image size */
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.reveal {
+    background-color: #f8f9fa; /* Soft grey */
+    color: #222; /* Darker text for better contrast */
+}
+
+
+.reveal ul {
+    list-style: none;
+    padding: 0;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.reveal ul li {
+    margin: 10px 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    opacity: 1 !important; /* Prevent unwanted opacity */
+}
+
 .reveal-viewport {
 	height: 100%;
 	overflow: hidden;
@@ -51,7 +117,9 @@ html.reveal-full-page {
  *********************************************/
 
 .reveal .fragment {
-	transition: all .2s ease;
+    opacity: 0;
+    transform: translateY(20px);
+	transition: all .5s ease;
 
 	&:not(.custom) {
 		opacity: 0;
